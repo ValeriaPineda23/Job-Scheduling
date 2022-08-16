@@ -11,7 +11,7 @@ schedule that obtains the maximum amount of profit, assuming that all processing
 integers between $1$ and $n$.
 
 ## Solution
-### Step 1 Characterize the structure of the optimal solution
+<!---### Step 1 Characterize the structure of the optimal solution
 
 We obtain the profit when adding a job into the sequence, using the following equation:
 
@@ -46,9 +46,8 @@ p_1 & \quad \text{if } n = 1
 $$
 
 Where $𝐶$ are the possible combinations, considering that $𝑙𝑒𝑛𝑔𝑡h(𝑆)$ elements have been scheduled
-and $a_𝑘$ is currently being added. For example, if we want to add $𝑎_1$, then $𝑘 = 1$, and $𝑓[𝐶]$ would be equal to $𝑓[𝑎_2, 𝑎_3]$. 
-This happens because, we would add 
-the profit of scheduling $𝑎_1$ to the already obtained profit of scheduling $𝑎_2$ and $𝑎_3$. Thus, the number of
+and $a_𝑘$ is currently being added. For example, if we want to add $𝑎_1$ and $C=𝑎_2, 𝑎_3, then $𝑘 = 1$, and $𝑓[𝐶]$ would be equal to $𝑓[𝑎_2, 𝑎_3]$. 
+This happens because, we would add the profit of scheduling $𝑎_1$ to the already obtained profit of scheduling $𝑎_2$ and $𝑎_3$. Thus, the number of
 possible combinations $𝐶$ is equal to $\binom{S}{d}$ (where $𝑑=𝑙𝑒𝑛𝑔𝑡h(𝑠) − 1$).
 
 In addition, the maximum number of combinations $C$ is equal to $\binom{n}{l}$, where $𝑙$ is the current iteration number. 
@@ -59,7 +58,7 @@ To illustrate this better we will follow up in the case where we have developed 
 evaluations is $\binom{4}{2}=6$. This would result in the following evaluations
 following form: $𝑓\[𝑎_1,𝑎_2\]$, $𝑓\[𝑎_1,𝑎_3\]$, $𝑓\[𝑎_1,𝑎_4\]$, $𝑓\[𝑎_2,𝑎_3\]$, $𝑓\[𝑎_2,𝑎_4\]$, and $𝑓\[𝑎_3,𝑎_4\]$.
 
-### Step 3 Calculate the value of the optimal solution in a bottom-up way
+### Step 3 Calculate the value of the optimal solution in a bottom-up way-->
 Now we provide the solution for the problem, considering that we have the following data:
 
 Job (j) | Processing time ($t_j$) | Deadline ($d_j$) | Profit ($p_j$) |
